@@ -1,0 +1,47 @@
+/* ListarHoteles.css */
+.listado-hoteles {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .listado-hoteles h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .listado-hoteles p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .ant-table {
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #fafafa;
+    color: #333;
+  }
+  
+  .ant-table-tbody > tr > td {
+    color: #555;
+  }
+  
+  .ant-table-pagination {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .ant-table-row:hover {
+    background-color: #e6f7ff;
+  }
+  
+  .ant-table th, .ant-table td {
+    padding: 12px 16px;
+  }
+  

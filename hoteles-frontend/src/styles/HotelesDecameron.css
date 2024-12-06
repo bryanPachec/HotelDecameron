@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Espacio entre las columnas */
+}
+
+.contenedor-fondo{
+  background-image: url('../assets/img/fondo-hotel.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 40vh; /* Cambiado de 60% a 80vh para más altura */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.35); /* Aumentar la sombra al pasar el mouse */
+
+}
+
+.titulo-hotel{
+  color: #fff; /* Color de la letra especificado */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Sombra negra para mejorar la legibilidad */
+  font-size: 2.5rem; /* Tamaño de la fuente, ajustable según necesidad */
+  font-weight: bold; /* Negrita para mayor presencia */
+}
+.contenido-hotel{
+  display: flex;
+  margin-top: 3%;
+  justify-content: space-between; /* Espacio entre las columnas para su distribución */
+  gap: 10px; /* Espacio entre las dos columnas */
+}
+
+.contenedor-menu {
+  flex: 0 0 auto; /* Asegura que la columna no se reduzca */
+  width: 100%; /* El ancho de esta columna será relativo a su contenedor */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  padding: 10px; /* Opcional: agrega espacio interno si es necesario */
+}
+
+.ant-menu {
+  width: 100%; /* El menú ocupa todo el ancho del contenedor-menu */
+}
+
+.contenedor-contenido{
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 12px 40px rgba(0, 0, 0, 0.35); /* Aumentar la sombra al pasar el mouse */
+
+}
+
