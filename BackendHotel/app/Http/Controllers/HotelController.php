@@ -18,6 +18,15 @@ class HotelController extends Controller
      */
     public function store(StoreHotelRequest $request)
     {
+
+        // Verificar si ya existe un hotel con el mismo NIT
+        $hotelExistente = Hotel::where('nit', $request->input('nit'))->first();
+
+        if ($hotelExistente) {
+            return response()->json(['error' => 'El NIT del hotel ya existe.'], 422);
+        }
+
+        // Crear el hotel si no existe uno con el mismo NIT
         $hotel = Hotel::create($request->validated());
         return response()->json($hotel, 201);
     }
@@ -32,6 +41,4 @@ class HotelController extends Controller
         $hotels = Hotel::all();
         return response()->json($hotels, 200);
     }
-
- 
 }
